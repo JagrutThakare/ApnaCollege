@@ -17,9 +17,9 @@ public class MajorityElement {
 
         // Set<Integer> keySet = map.keySet();
         // for (Integer key : keySet) {
-        // if (map.get(key) > arr.length / 3) {
-        // System.out.println(key);
-        // }
+        //     if (map.get(key) > arr.length / 3) {
+        //         System.out.println(key);
+        //     }
         // }
 
         for (Integer key : map.keySet()) {
