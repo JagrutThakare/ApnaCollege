@@ -25,5 +25,7 @@ public class ConvertToUppercase {
         System.out.println(str);
 
         System.out.println(getUppercase(str));
+
+        sc.close();
     }
 }

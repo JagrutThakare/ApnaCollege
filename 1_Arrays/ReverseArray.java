@@ -1,5 +1,4 @@
 //Question : Reverse an Array
-package Arrays;
 
 public class ReverseArray {
     public static void reverse(int arr[]) {

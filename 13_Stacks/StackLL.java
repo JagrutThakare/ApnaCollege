@@ -1,5 +1,5 @@
 //stack using Linked List
-public class StackDS {
+public class StackLL {
     private static class Node {
         int data;
         Node next;
@@ -11,8 +11,8 @@ public class StackDS {
     }
 
     static class Stack {
-        public static Node head = null;
-        public static void push(int data) {
+        public Node head = null;
+        public void push(int data) {
             Node newNode = new Node(data);
 
             if(head == null) {
@@ -23,11 +23,11 @@ public class StackDS {
             head = newNode;
         }
 
-        public static boolean isEmpty() {
+        public boolean isEmpty() {
             return head == null;
         }
 
-        public static int pop() {
+        public int pop() {
             if(isEmpty()) {
                 return -1;
             }
@@ -36,7 +36,7 @@ public class StackDS {
             return top.data;
         }
 
-        public static int peek() {
+        public int peek() {
             if(isEmpty()) {
                 return -1;
             }

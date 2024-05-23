@@ -1,5 +1,4 @@
 //Question : Print all pairs in an Array
-package Arrays;
 
 public class PairsinArray {
     public static void printPairs(int arr[]) {

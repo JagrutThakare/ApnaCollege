@@ -244,11 +244,9 @@ public class LL {
         if(flag == 0)
             return null;
         slow = head;
-        int i = 0;
         while(slow != fast) {
             slow = slow.next;
             fast = fast.next;
-            i++;
         }
         
         return slow;

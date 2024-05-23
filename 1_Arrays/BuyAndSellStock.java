@@ -1,4 +1,3 @@
-package Arrays;
 /* 
     DSA Sheet No. 19
     Topic - Arrays

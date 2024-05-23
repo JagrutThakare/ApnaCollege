@@ -1,4 +1,5 @@
-import java.util.*;
+import java.util.Deque;
+import java.util.LinkedList;
 
 public class SlidingWindowMax {
     public static void slidingWindowMax(int nums[], int k) {
@@ -22,6 +23,6 @@ public class SlidingWindowMax {
         int nums[] = {1, 3, -1, -3, 5, 3, 6, 7};
         int k=3;
 
-
+        slidingWindowMax(nums, k);
     }
 }

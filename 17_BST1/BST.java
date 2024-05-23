@@ -1,5 +1,3 @@
-import java.util.*;
-
 public class BST {
     static class Node {
         int data;

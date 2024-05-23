@@ -1,5 +1,3 @@
-import java.util.*;
-
 public class FloodFillAlgo {
     // O(m*n)
     public static void helper(int[][] image, int sr, int sc, int color, boolean vis[][], int orgCol) {

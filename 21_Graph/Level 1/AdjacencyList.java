@@ -1,21 +1,11 @@
 import java.util.*;
 
 public class AdjacencyList {
-    static class Edge {
-        int src;
-        int dest;
-        int wt;
-
-        public Edge(int src, int dest, int wt) {
-            this.src = src;
-            this.dest = dest;
-            this.wt = wt;
-        }
-    }
 
     public static void main(String[] args) {
         int V = 5;
         // int arr[] = new int[V];
+        @SuppressWarnings("unchecked")
         ArrayList<Edge>[] graph = new ArrayList[V]; // null -> empty arraylist
 
         for (int i = 0; i < V; i++) {
@@ -47,5 +37,17 @@ public class AdjacencyList {
             Edge e = graph[2].get(i); // Src, Dest, Weight
             System.out.print(e.dest + " ");
         }
+    }
+}
+
+class Edge {
+    int src;
+    int dest;
+    int wt;
+
+    public Edge(int src, int dest, int wt) {
+        this.src = src;
+        this.dest = dest;
+        this.wt = wt;
     }
 }

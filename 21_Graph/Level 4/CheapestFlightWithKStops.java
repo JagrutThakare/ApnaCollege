@@ -1,4 +1,6 @@
-import java.util.*;
+import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.Queue;
 
 public class CheapestFlightWithKStops {
     static class Edge {
@@ -39,7 +41,7 @@ public class CheapestFlightWithKStops {
             this.stops = s;
         }
     }
-
+    @SuppressWarnings("unchecked")
     public static int cheapesFlight(int n, int flights[][], int src, int dest, int k) {
         ArrayList<Edge> graph[] = new ArrayList[n];
         createGraph(flights, graph);
@@ -63,7 +65,6 @@ public class CheapestFlightWithKStops {
 
             for (int i = 0; i < graph[curr.v].size(); i++) {
                 Edge e = graph[curr.v].get(i);
-                int u = e.src;
                 int v = e.dest;
                 int wt = e.wt;
 

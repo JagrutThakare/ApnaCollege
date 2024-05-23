@@ -1,5 +1,4 @@
 //Question : Print maximum subarray sum
-package Arrays;
 
 public class MaxSubarraySum {
     //bruteforce

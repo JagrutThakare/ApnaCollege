@@ -1,4 +1,3 @@
-import java.util.*;
 
 //Problem : Calculate Diagonal Sum
 

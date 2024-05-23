@@ -1,4 +1,6 @@
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Queue;
+import java.util.LinkedList;
 
 public class Kahns {
     static class Edge {
@@ -67,7 +69,7 @@ public class Kahns {
 
         System.out.println();
     }
-
+    @SuppressWarnings("unchecked")
     public static void main(String[] args) {
         int V = 6;
         ArrayList<Edge> graph[] = new ArrayList[V];

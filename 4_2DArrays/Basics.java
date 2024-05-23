@@ -23,5 +23,7 @@ public class Basics {
             }
             System.out.println();
         }
+
+        sc.close();
     }
 }

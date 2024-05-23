@@ -72,7 +72,7 @@ public class Prims {
 
         System.out.println(finalCost);
     }
-
+    @SuppressWarnings("unchecked")
     public static void main(String[] args) {
         int V = 4;
         ArrayList<Edge> graph[] = new ArrayList[V];

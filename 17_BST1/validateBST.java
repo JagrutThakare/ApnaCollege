@@ -1,3 +1,4 @@
+
 public class validateBST {
     static class Node {
         int data;
@@ -52,7 +53,6 @@ public class validateBST {
         for(int i=0; i<values.length; i++) {
             root = insert(root, values[i]);
         }
-
-        printRoot2Leaf(root, new ArrayList<>());
     }
+
 }

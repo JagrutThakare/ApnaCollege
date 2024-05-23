@@ -1,4 +1,6 @@
-import java.util.*;
+import java.util.LinkedList;
+import java.util.ArrayList;
+import java.util.Queue;
 
 public class ConnectedComponent {
     static class Edge {

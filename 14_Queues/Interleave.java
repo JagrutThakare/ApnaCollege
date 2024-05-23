@@ -1,4 +1,5 @@
-import java.util.*;
+import java.util.Queue;
+import java.util.LinkedList;
 
 public class Interleave {
     public static void interleave(Queue<Integer> q) {

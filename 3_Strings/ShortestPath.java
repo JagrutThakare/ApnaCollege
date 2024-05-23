@@ -1,4 +1,3 @@
-import java.util.*;
 //Problem : Print the displacement (Shortest Path)
 public class ShortestPath {
     public static float shortestPath(String path) {

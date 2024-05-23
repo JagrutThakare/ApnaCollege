@@ -19,5 +19,6 @@ public class StringBasics {
 
         System.out.println(fullName.length());
         System.out.println(fullName.charAt(0));
+        sc.close();
     }
 }

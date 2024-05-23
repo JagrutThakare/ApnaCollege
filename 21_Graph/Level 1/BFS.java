@@ -1,4 +1,7 @@
-import java.util.*;
+import java.util.LinkedList;
+import java.util.ArrayList;
+import java.util.Queue;
+
 
 public class BFS {
     static class Edge {
@@ -67,7 +70,7 @@ public class BFS {
             }
         }
     }
-
+    @SuppressWarnings("unchecked")
     public static void main(String[] args) {
         int V = 7;
         ArrayList<Edge> graph[] = new ArrayList[V];

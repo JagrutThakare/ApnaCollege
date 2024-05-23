@@ -1,4 +1,5 @@
-import java.util.*;
+import java.util.LinkedList;
+import java.util.Deque;
 
 public class Classroom {
     static class Stack {

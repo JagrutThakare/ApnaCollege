@@ -1,5 +1,3 @@
-package Arrays;
-
 public class ArraysIntro {
     public static void main(String args[]) {
         //creating an array 

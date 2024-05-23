@@ -1,4 +1,3 @@
-import java.util.*;
 
 //Problem : Compress the given string
 public class StringCompression {

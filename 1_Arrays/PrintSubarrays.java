@@ -1,5 +1,4 @@
 //Question : Print subarrays of an array
-package Arrays;
 
 public class PrintSubarrays {
     public static void printSubarrays(int arr[]) {

@@ -32,5 +32,6 @@ public class RodCutting {
         int length[] = { 1, 2, 3, 4, 5, 6, 7, 8 }; // Pieces length
         int prices[] = { 1, 5, 8, 9, 10, 17, 17, 20 };
         int totRod = 8;
+        System.out.println(rodCutting(length, prices, totRod));
     }
 }

@@ -41,7 +41,7 @@ public class HashSetBasics {
         city.add("Bulandshahr");
         city.add("Vellore");
 
-        Iterator it = city.iterator();
+        Iterator<String> it = city.iterator();
         while (it.hasNext()) {
             System.out.println(it.next());
         }

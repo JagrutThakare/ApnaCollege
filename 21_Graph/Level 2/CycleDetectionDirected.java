@@ -60,7 +60,7 @@ public class CycleDetectionDirected {
         stack[curr] = false;
         return false;
     }
-
+    @SuppressWarnings("unchecked")
     public static void main(String[] args) {
         int V = 5;
         ArrayList<Edge> graph[] = new ArrayList[V];

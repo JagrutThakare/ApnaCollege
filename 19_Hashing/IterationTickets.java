@@ -28,7 +28,7 @@ public class IterationTickets {
 
         System.out.print(start);
 
-        for (String key : tickets.keySet()) {
+        while(start != null) {
             System.out.print(" -> " + tickets.get(start));
             start = tickets.get(start);
         }

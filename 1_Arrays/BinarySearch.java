@@ -1,6 +1,4 @@
 //Question : Binary Search in an Array
-package Arrays;
-
 public class BinarySearch {
     public static int binSearch(int arr[], int key) {
         int start = 0;

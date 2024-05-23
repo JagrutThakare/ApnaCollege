@@ -45,7 +45,7 @@ public class AllPathToTargetDirected {
             printAllPath(graph, e.dest, dest, path + src);
         }
     }
-
+    @SuppressWarnings("unchecked")
     public static void main(String[] args) {
         int V = 6;
         ArrayList<Edge> graph[] = new ArrayList[V];
