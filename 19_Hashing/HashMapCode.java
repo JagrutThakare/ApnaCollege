@@ -1,4 +1,5 @@
-import java.util.*;
+import java.util.LinkedList;
+import java.util.ArrayList;
 
 public class HashMapCode {
     static class HashMap<K, V> {
@@ -12,15 +13,15 @@ public class HashMapCode {
             }
         }
 
-        private int n; // n
-        private int N;
-        private LinkedList<Node> buckets[]; // N = buckets.length
+        private int n; // number of elements
+        private int N; // number of buckets
+        private LinkedList<Node>[] buckets; // array of buckets
 
         @SuppressWarnings("unchecked")
         public HashMap() {
             this.N = 4;
-            this.buckets = new LinkedList[4];
-            for (int i = 0; i < 4; i++) {
+            this.buckets = new LinkedList[N];
+            for (int i = 0; i < N; i++) {
                 this.buckets[i] = new LinkedList<>();
             }
         }
@@ -30,24 +31,20 @@ public class HashMapCode {
             return Math.abs(hc) % N;
         }
 
-        private int SearchInLL(K key, int bi) {
+        private int searchInLL(K key, int bi) {
             LinkedList<Node> ll = buckets[bi];
-            int di = 0;
-
             for (int i = 0; i < ll.size(); i++) {
                 Node node = ll.get(i);
-                if (node.key == key) {
-                    return di;
+                if (node.key.equals(key)) {
+                    return i;
                 }
-                di++;
             }
-
             return -1;
         }
 
         public void put(K key, V value) {
             int bi = hashFunction(key);
-            int di = SearchInLL(key, bi);
+            int di = searchInLL(key, bi);
 
             if (di != -1) {
                 Node node = buckets[bi].get(di);
@@ -58,25 +55,23 @@ public class HashMapCode {
             }
 
             double lambda = (double) n / N;
-            if (lambda > 2.0) { // greater than threshold value
+            if (lambda > 2.0) {
                 rehash();
             }
         }
 
         @SuppressWarnings("unchecked")
         private void rehash() {
-            LinkedList<Node> oldBuck[] = buckets;
+            LinkedList<Node>[] oldBuckets = buckets;
             buckets = new LinkedList[N * 2];
-            N = 2 * N;
+            N = N * 2;
             for (int i = 0; i < buckets.length; i++) {
                 buckets[i] = new LinkedList<>();
             }
 
-            // nodes -> add in bucket
-            for (int i = 0; i < oldBuck.length; i++) {
-                LinkedList<Node> ll = oldBuck[i];
-                for (int j = 0; j < ll.size(); j++) {
-                    Node node = ll.remove();
+            for (int i = 0; i < oldBuckets.length; i++) {
+                LinkedList<Node> ll = oldBuckets[i];
+                for (Node node : ll) {
                     put(node.key, node.value);
                 }
             }
@@ -84,18 +79,14 @@ public class HashMapCode {
 
         public boolean containsKey(K key) {
             int bi = hashFunction(key);
-            int di = SearchInLL(key, bi);
+            int di = searchInLL(key, bi);
 
-            if (di != -1) {
-                return true;
-            } else {
-                return false;
-            }
+            return di != -1;
         }
 
         public V get(K key) {
             int bi = hashFunction(key);
-            int di = SearchInLL(key, bi);
+            int di = searchInLL(key, bi);
 
             if (di != -1) {
                 Node node = buckets[bi].get(di);
@@ -107,7 +98,7 @@ public class HashMapCode {
 
         public V remove(K key) {
             int bi = hashFunction(key);
-            int di = SearchInLL(key, bi);
+            int di = searchInLL(key, bi);
 
             if (di != -1) {
                 Node node = buckets[bi].remove(di);
@@ -118,7 +109,7 @@ public class HashMapCode {
             }
         }
 
-        public ArrayList<K> ketSet() {
+        public ArrayList<K> keySet() {
             ArrayList<K> keys = new ArrayList<>();
 
             for (int i = 0; i < buckets.length; i++) {
@@ -144,9 +135,9 @@ public class HashMapCode {
         hm.put("Indonesia", 6);
         hm.put("Nepal", 5);
 
-        ArrayList<String> keys = hm.ketSet();
+        ArrayList<String> keys = hm.keySet();
         for (String key : keys) {
-            System.out.println(key);
+            System.out.print(key + " ");
         }
 
         System.out.println();
