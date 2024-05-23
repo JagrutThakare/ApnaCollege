@@ -1,36 +1,7 @@
 {
-    "java.project.sourcePaths": [
-        "0_JavaProgrammingBasics\\Patterns",
-        "1_Arrays",
-        "10_Backtracking",
-        "11_ArrayLists",
-        "12_LinkedList.java",
-        "13_Stacks",
-        "14_Queues",
-        "15_Greedy",
-        "16_BinaryTrees",
-        "17_BST1",
-        "17_BST2",
-        "18_Heap",
-        "19_Hashing",
-        "2_Basic Sorting",
-        "20_Trie",
-        "21_Graph\\Level 1",
-        "21_Graph\\Level 2",
-        "21_Graph\\Level 3",
-        "21_Graph\\Level 4",
-        "22_Dynamic Programming\\Level 1",
-        "22_Dynamic Programming\\Level 2",
-        "22_Dynamic Programming\\Level 3",
-        "22_Dynamic Programming\\Level 4",
-        "23_Segment Tree",
-        "3_Strings",
-        "4_2DArrays",
-        "5_Bit Manipulation",
-        "7_RecursionBasics",
-        "8_DivideAndConquer"
-    ],
-    "java.project.referencedLibraries": [],
-    "java.project.outputPath": "Outputs",
-    
+    "java.project.sourcePaths": ["src"],
+    "java.project.outputPath": "bin",
+    "java.project.referencedLibraries": [
+        "lib/**/*.jar"
+    ]
 }
