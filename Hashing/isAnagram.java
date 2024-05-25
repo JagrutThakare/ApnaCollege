@@ -3,6 +3,16 @@ package Hashing;
 import java.util.*;
 
 public class isAnagram {
+
+    /**
+     * @apiNote Time Complexity - O(N).
+     * @apiNote Space Complexity - O(N).
+     * @apiNote N = Length of String.
+     * 
+     * @param s - First String
+     * @param t - Secon String
+     * @return true if the Strings are anagram and false otherwise.
+     */
     public static boolean Anagram(String s, String t) {
         HashMap<Character, Integer> map = new HashMap<>();
 

@@ -2,7 +2,7 @@ package Hashing;
 
 import java.util.*;
 
-public class IterationTickets {
+public class IteneraryTickets {
     public static String getStart(HashMap<String, String> tickets) {
         HashMap<String, String> revMap = new HashMap<>();
 

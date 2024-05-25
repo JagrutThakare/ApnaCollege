@@ -1,6 +1,7 @@
 package Hashing;
 
 import java.util.*;
+//Count number of subarrays with sum equal to K
 
 public class SubArraySumEqualToK {
     public static void main(String[] args) {

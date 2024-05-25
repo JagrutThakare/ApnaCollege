@@ -1,5 +1,10 @@
 package Trie;
 
+/*
+ * Given an Input String and Dictionary of words find out if input 
+ * string can be broken into a space separated sequence
+ * of dictionary words.
+ */
 public class WordBreakProblem {
     static class Node {
         Node children[] = new Node[26];

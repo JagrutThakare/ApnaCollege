@@ -1,5 +1,6 @@
 package Hashing;
 
+//find all elements that appear more than n/3 times
 import java.util.*;
 
 public class MajorityElement {
