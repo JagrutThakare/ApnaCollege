@@ -1,5 +1,11 @@
 package Trie;
-
+/* Count Unique Substring
+ * Given a string of length n of lowercase alphabet char, 
+ * we need to count total number of distinct substrings of
+ * this string
+ * 
+ * count unique substring  = all unique prefix of all suffix of string
+ */
 public class UniqueSubstring {
     static class Node {
         Node children[] = new Node[26];
@@ -57,7 +63,7 @@ public class UniqueSubstring {
     }
 
     public static void main(String[] args) {
-        String str = "ababa"; // ans = 10
+        String str = "kxiksxjecwmkwabhsl"; // ans = 10
 
         // suffix -> insert in trie
         for (int i = 0; i < str.length(); i++) {

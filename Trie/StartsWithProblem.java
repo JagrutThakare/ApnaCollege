@@ -1,5 +1,9 @@
 package Trie;
-
+/*
+ * Create a function boolean startsWith(String prefix) for a trie.
+ * Return true if there is a previously inserted string word that has the
+ * prefix as given input 'prefix', and false otherwise
+ */
 public class StartsWithProblem {
     static class Node {
         Node children[] = new Node[26];

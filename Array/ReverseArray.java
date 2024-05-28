@@ -1,4 +1,4 @@
-package Arrays;
+package Array;
 
 //Question : Reverse an Array
 

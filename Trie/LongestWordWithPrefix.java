@@ -1,5 +1,8 @@
 package Trie;
-
+/*
+ * Find longest string in words such that every pefix of it is also in words
+ * if there are two or more such strings return lexicographically smaller string.
+ */
 public class LongestWordWithPrefix {
     static class Node {
         Node children[] = new Node[26];
@@ -67,7 +70,7 @@ public class LongestWordWithPrefix {
         for (int i = 0; i < words.length; i++) {
             insert(words[i]);
         }
-
+        
         longestWord(root, new StringBuilder(""));
         System.out.println(ans);
     }

@@ -1,4 +1,4 @@
-package Arrays;
+package Array;
 
 //Question : Print all pairs in an Array
 

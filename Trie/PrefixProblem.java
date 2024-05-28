@@ -1,5 +1,8 @@
 package Trie;
-
+/*
+ * Find Shortest Unique Prefix for every word in given list.
+ * Assume no word is prefix of another.
+ */
 public class PrefixProblem {
     static class Node {
         Node children[] = new Node[26];

@@ -1,4 +1,11 @@
 package Trie;
+/* Count Unique Substring
+ * Given a string of length n of lowercase alphabet char, 
+ * we need to count total number of distinct substrings of
+ * this string
+ * 
+ * count unique substring  = all unique prefix of all suffix of string
+ */
 
 public class UniqueSubstringSelf {
     static class Node {

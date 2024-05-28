@@ -1,4 +1,4 @@
-package Arrays;
+package Array;
 
 //Question : Binary Search in an Array
 public class BinarySearch {

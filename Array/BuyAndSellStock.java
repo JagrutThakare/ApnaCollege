@@ -1,4 +1,4 @@
-package Arrays;
+package Array;
 
 /* 
     DSA Sheet No. 19
