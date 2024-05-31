@@ -17,7 +17,7 @@ package Trie;
  * time by "w", "wo", "wor", and "worl".
  * 
  */
-class Solution {
+public class LongestWordInDictionary {
     public String longestWord(String[] words) {
         Dictionary dictionary = new Dictionary();
 

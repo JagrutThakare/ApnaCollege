@@ -7,7 +7,7 @@ import java.util.*;
 
 // Note: The final output will be in lexicographic order. 
 
-class Solution {
+public class GroupAnagrams {
     TrieNode root;
     List<List<String>> ans;
 
