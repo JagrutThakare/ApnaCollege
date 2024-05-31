@@ -52,7 +52,10 @@ public class HasPath {
     }
 
     // O(V+E)
-    public static boolean ans(ArrayList<Edge>[] graph, int src, int dest, boolean visit[]) {
+    @SuppressWarnings("unchecked")
+    static ArrayList<Edge> graph[] = new ArrayList[7];
+    static boolean visit[] =  new boolean[7];
+    public static boolean hasPath(int src, int dest) {
         if (src == dest) {
             return true;
         }
@@ -60,18 +63,17 @@ public class HasPath {
         for (int i = 0; i < graph[src].size(); i++) {
             Edge e = graph[src].get(i);
             // e.dest = neighbour
-            if (!visit[e.dest] && ans(graph, e.dest, dest, visit)) {
+            if (!visit[e.dest] && hasPath(e.dest, dest)) {
                 return true;
             }
         }
         return false;
     }
-    @SuppressWarnings("unchecked")
+    
     public static void main(String[] args) {
-        int V = 7;
-        ArrayList<Edge> graph[] = new ArrayList[V];
+        
         CreateGraph(graph);
 
-        System.out.println(ans(graph, 0, 5, new boolean[V]));
+        System.out.println(hasPath(0, 5));
     }
 }
