@@ -54,7 +54,7 @@ public class Dijkstra {
         }
     }
 
-    public static void dijkstra(ArrayList<Edge> graph[], int src) {
+    public static void dijkstra(ArrayList<Edge> graph[], int src) { //O(v + ElogV);
         int dist[] = new int[graph.length]; // dist[i] -> src to i
         for (int i = 0; i < dist.length; i++) {
             if (src != i) {

@@ -59,7 +59,7 @@ public class Bipartite {
                     for (int j = 0; j < graph[curr].size(); j++) {
                         Edge e = graph[curr].get(j); // e.dest
                         if (col[e.dest] == -1) {
-                            int nextCol = col[curr] == 0 ? 1 : 0;
+                            int nextCol = col[curr] ^ 1;
                             col[e.dest] = nextCol;
                             q.add(e.dest);
                         } else if (col[curr] == col[e.dest]) {
@@ -74,6 +74,16 @@ public class Bipartite {
     }
     @SuppressWarnings("unchecked")
     public static void main(String[] args) {
+        /*
+          Graph Representation:
+        
+              0
+             / \
+            1   2
+             \   \
+              3 - 4
+        */
+    
         int V = 5;
         ArrayList<Edge> graph[] = new ArrayList[V];
         CreateGraph(graph);

@@ -36,6 +36,7 @@ public class AllPathToTargetDirected {
         graph[5].add(new Edge(5, 2));
     }
 
+    //O(V^V)
     public static void printAllPath(ArrayList<Edge> graph[], int src, int dest, String path) {
         if (src == dest) {
             System.out.println(path + dest);
