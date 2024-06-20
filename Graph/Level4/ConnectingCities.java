@@ -1,6 +1,7 @@
 package Graph.Level4;
 
 import java.util.*;
+//Find min cost for connecting all cities on a map.
 
 public class ConnectingCities {
     static class Edge implements Comparable<Edge> {
