@@ -56,3 +56,32 @@ public class LIS {
         System.out.println(lis(arr));
     }
 }
+
+// O(NlogN) approach
+// class Solution {
+    
+//     static int longestSubsequence(int n, int a[]) {
+//         ArrayList<Integer> temp = new ArrayList<>();
+//         int ans=1;
+//         temp.add(a[0]);
+//         for(int i=1;i<n;i++){
+//             if(a[i]>temp.get(temp.size()-1)){
+//                 temp.add(a[i]);
+//                 ans++;
+//             }
+//             else{
+//                 int index = Collections.binarySearch(temp,a[i]);
+//                 //in cases where element is not present it returns the 
+//                 //position where it should have been inserted.
+//                 //pos = -index-1;
+                
+//                 if(index < 0){
+//                     index = -index-1;
+//                 }
+                
+//                 temp.set(index,a[i]);
+//             }
+//         }
+//         return ans;
+//     }
+// }
